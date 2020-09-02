@@ -15,24 +15,25 @@ namespace BatmonMQTTwin
         public void doPublish(String host, int iPort, String topic)
         {
             mqttClient = new MqttClient(host, iPort, false, uPLibrary.Networking.M2Mqtt.MqttSslProtocols.None, null, null);
-            BatmonMQTT_Service.doLog("doPublish: created new client");
+            
+            utils.doLog("doPublish: created new client");
 
             mqttClient.ProtocolVersion = MqttProtocolVersion.Version_3_1;
             
             try
             {
-                BatmonMQTT_Service.doLog("doPublish: connect()...");
+                utils.doLog("doPublish: connect()...");
                 mqttClient.Connect(Environment.MachineName);
                 String json = MyBattery.getBattery();
-                BatmonMQTT_Service.doLog("doPublish: publish "+ "/android/batteries/" + topic + ", "+ json);
-                mqttClient.Publish("/android/batteries/" + topic, Encoding.UTF8.GetBytes(json));
-                BatmonMQTT_Service.doLog("doPublish: Disconnect()...");
+                utils.doLog("doPublish: publish "+ "android/batteries/" + topic + ", "+ json);
+                mqttClient.Publish("android/batteries/" + topic, Encoding.UTF8.GetBytes(json));
+                utils.doLog("doPublish: Disconnect()...");
                 mqttClient.Disconnect();
-                BatmonMQTT_Service.doLog("doPublish: Disconnect()...DONE");
+                utils.doLog("doPublish: Disconnect()...DONE");
             }
             catch(Exception ex)
             {
-                BatmonMQTT_Service.doLog("Exception in doPublish: " + ex.Message);
+                utils.doLog("Exception in doPublish: " + ex.Message);
             }
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
+
 
 namespace BatmonMQTTwin
 {
@@ -24,9 +24,9 @@ namespace BatmonMQTTwin
 
         public class BatteryInfo
         {
-            String status = "discharging";
-            int level = 0;
-            String datetime = "";
+            public String status = "discharging";
+            public int level = 0;
+            public String datetime = "";
             public BatteryInfo(String _status, float _level, String timestamp)
             {
                 status = _status;

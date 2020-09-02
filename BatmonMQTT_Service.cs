@@ -8,6 +8,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using global;
 
 namespace BatmonMQTTwin
 {
@@ -59,6 +60,8 @@ namespace BatmonMQTTwin
             String port = MySettings.get(MySettings.MQTT_SETTINGS.mqtt_port);
             String interval = MySettings.get(MySettings.MQTT_SETTINGS.mqtt_interval);
             String topic = MySettings.get(MySettings.MQTT_SETTINGS.mqtt_topic);
+            topic = Environment.MachineName;
+            Settings1.Default.mqtt_topic = topic;
 
             int iPort = 0;
             int.TryParse(port, out iPort);
