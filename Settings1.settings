@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BatmonMQTTwin" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="mqtt_host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">199.64.70.66</Value>
+    </Setting>
+    <Setting Name="mqtt_port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1883</Value>
+    </Setting>
+    <Setting Name="mqtt_interval" Type="System.String" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="mqtt_topic" Type="System.String" Scope="User">
+      <Value Profile="(Default)">windevice1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

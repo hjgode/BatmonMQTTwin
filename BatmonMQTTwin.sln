@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatmonMQTTwin", "BatmonMQTTwin.csproj", "{11D627D3-C818-4CC7-A9EC-90E9C4135941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11D627D3-C818-4CC7-A9EC-90E9C4135941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D627D3-C818-4CC7-A9EC-90E9C4135941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D627D3-C818-4CC7-A9EC-90E9C4135941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D627D3-C818-4CC7-A9EC-90E9C4135941}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72081A37-4642-45A0-932F-3CC973D90AFE}
+	EndGlobalSection
+EndGlobal
